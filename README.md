@@ -38,6 +38,8 @@ The aim of this folder is to extract the most informative 102 (or 20) points tha
 
 # Requirements
 
+## Packages required
+
 - **nb_conda_kernels :** running the Jupyter notebook in the correct environment.
 - **jupyter_contrib_nbextensions :** tools for better Jupyter notebooks.
 ~~~
@@ -46,3 +48,10 @@ conda install -c conda-forge jupyter_contrib_nbextensions
 - **Numpy :** array handling.
 - **Matplotlib :** data visualisation.
 - **Scikit-learn :** machine learning algorithms. **Version 0.19.1** is recommended.
+
+## Conda environment
+
+~~~
+conda env create -f alcf.yml
+~~~
+
