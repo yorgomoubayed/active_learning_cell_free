@@ -2,15 +2,14 @@ Author: Mathilde Koch, Faulon's group, INRAe.
 
 # Description
 
-The aim of this folder is to regroup all necessary scripts for generating data and models presented in **Large scale active-learning-guided exploration to maximize cell-free production by Olivier Borkowski*, Mathilde Koch*, Agnès Zettor, Amir Pandi, Angelo Cardoso Batista, Paul Soudier and Jean-Loup Faulon. Currently available at https://doi.org/10.1101/751669**. 
-*: authors contributed equally.
+The aim of this folder is to regroup all necessary scripts for generating data and models presented in Large scale active-learning-guided exploration to maximize cell-free production by Olivier Borkowski*, Mathilde Koch*, Agnès Zettor, Amir Pandi, Angelo Cardoso Batista, Paul Soudier and Jean-Loup Faulon. Currently available at https://doi.org/10.1101/751669. *: authors contributed equally.
 
 # Active learning loop
 
 This folder contains data both for: 
-- Generating the active learning loop (learn_and_suggest script, Figures 1c and 1d).
-- Generating the model statistics at each iteration (generate_model_statistics, Figure 1e).
-- Generating the first plate to perform active learning (initial_plate_generation, Figure 1c).
+- Generating the active learning loop **(learn_and_suggest script, Figures 1c and 1d)**.
+- Generating the model statistics at each iteration **(generate_model_statistics, Figure 1e)**.
+- Generating the first plate to perform active learning **(initial_plate_generation, Figure 1c)**.
 
 # Compound effect analysis
 
@@ -55,3 +54,6 @@ conda install -c conda-forge jupyter_contrib_nbextensions
 conda env create -f alcf.yml
 ~~~
 
+~~~
+conda activate alcf
+~~~
