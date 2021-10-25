@@ -8,14 +8,14 @@ Large scale active-learning-guided exploration to maximize cell-free production 
 
 # Active learning loop
 
-This folder contains data both for: 
-- Generating the active learning loop **(learn_and_suggest script, Figures 1c and 1d)**.
-- Generating the model statistics at each iteration **(generate_model_statistics, Figure 1e)**.
-- Generating the first plate to perform active learning **(initial_plate_generation, Figure 1c)**.
+This folder contains data for:
+* Generating the initial plate to perform active learning. Given that the user doesn't have one **(initial_plate_generation, Figure 1c)**.
+* Generating the active learning loop **(learn_and_suggest script, Figures 1c and 1d)**.
+* Generating the model statistics at each iteration **(generate_model_statistics, Figure 1e)**.
 
 # Compound effect analysis
 
-Contains scripts to analyze the effect of compounds in different lysates with a linear regression or mutual information. **(Figure 1g, Supplementary Figure 3)**.
+This folder contains scripts to analyze the effect of compounds in different lysates with a linear regression or mutual information. **(Figure 1g, Supplementary Figure 3)**.
 
 # Controls analysis plates
 
@@ -35,7 +35,7 @@ This folder contains scripts to predict yield on unseen lysates to optimise them
 
 # Whole lysate most informative points
 
-The aim of this folder is to extract the most informative 102 (or 20) points that enabled the prediction of the full 1017 points dataset **(Supplementary Figure 2)**. Functions are similar to the ones that do the same thing in "multiple_extract" analysis. The difference is the wrapping around the input concentrations to test, or data to compare to.
+This folder containts scripts to extract the most informative 102 (or 20) points that enabled the prediction of the full 1017 points dataset **(Supplementary Figure 2)**. Functions are similar to the ones that do the same thing in "multiple_extract" analysis. The difference is the wrapping around the input concentrations to test, or data to compare to.
 
 # Requirements
 
@@ -50,12 +50,21 @@ conda install -c conda-forge jupyter_contrib_nbextensions
 - **Matplotlib :** data visualisation.
 - **Scikit-learn :** machine learning algorithms. **Version 0.19.1** is recommended.
 
-## Conda environment
+## Running scripts
 
+* Clone repository
+
+* Create conda environment form the YAML file (it has all packages and dependencies)
 ~~~
 conda env create -f alcf.yml
 ~~~
 
+* Activate conda environment
 ~~~
 conda activate alcf
+~~~
+
+* Launch Jupyter Notebook
+~~~
+jupyter notebook <notebook nama>
 ~~~

@@ -11,22 +11,3 @@ This folder contains all data files and scripts to generate Figures 1c, 1d and 1
 * **initial_plate_generation.ipynb:** Jupyter notebook that generates the initial training set (or initial plate).
 * **learn_and_suggest.ipynb:** Jupyter notebook that generates the active leaning loop.
 * **generate_model_statistics.ipynb:** Jupyter notebook that generates model statistics (5 fold cross validation).
-
-## Running scripts
-
-* Clone repository
-
-* Create conda environment form the YAML file (it has all packages and dependencies)
-~~~
-conda env create -f alcf.yml
-~~~
-
-* Activate conda environment
-~~~
-conda activate alcf
-~~~
-
-* Launch Jupyter Notebook
-~~~
-jupyter notebook <notebook nama>
-~~~
