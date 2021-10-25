@@ -1,4 +1,4 @@
-Author: Mathilde Koch, Faulon's group, INRAe.
+Apadted from Mathilde Koch, Faulon's group, INRAe.
 
 # Description
 
