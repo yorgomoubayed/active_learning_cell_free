@@ -15,15 +15,15 @@ This folder contains data for:
 
 # Compound effect analysis
 
-This folder contains scripts to analyze the effect of compounds in different lysates with a linear regression or mutual information. **(Figure 1g, Supplementary Figure 3)**.
+This folder contains scripts to analyze the effect of compounds in different lysates, either with a linear regression or a mutual information analysis. **(Figure 1g, Supplementary Figure 3)**.
 
 # Controls analysis plates
 
-This folder contains the data and scripts used to extract absolute yields (ie: compared to lysate of origin) for all other lysates. **(Supplementary Figure 4)**.
+This folder contains the data and scripts used to extract the absolute yields (ie: compared to lysate of origin) for all other lysates. **(Supplementary Figure 4)**.
 
 # Echo handling scripts
 
-This folder contains scripts for handling the Echo liquid handler. From a file of concentrations to test, to the instructions to the machine, to data extraction and quality control. **(No specific Figure)**
+This folder contains scripts for handling the [Echo liquid handler](https://www.labcyte.com/echo-liquid-handling). Based on a file of concentrations to test, the scripts generate instructions for Echo, then extract data and perform quality control. **(No specific figure)**
 
 # Multiple extracts analysis
 
