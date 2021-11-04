@@ -1,24 +1,24 @@
 # Folder description
 
 This folder contains scripts that handle:  
-* The conversion of concentration files to the instructions for the ECHO machine.
+* The conversion of concentration files to the instructions for the ECHO liquid handler.
 * The extraction of information from the TECAN (mapping values back to the concentration array).
 
 # Scripts description
 
 ## completed_concentration.ipynb
 
-This notebook completes a concentration file without constant values (extract), by adding those columns values.
+This notebook completes a concentration file that doesn't have constant values (extract), by adding those values.
 
 The notebook needs 3 inputs:  
-* concentrations_line_A
-* concentrations_example
-* concentrations_line_P
+* concentrations_line_A.csv
+* concentrations_example.csv
+* concentrations_line_P.csv
 
 The notebook generates 3 outputs:  
-* concentrations_line_A_completed
-* concentrations_example_completed
-* concentrations_line_P_completed
+* concentrations_line_A_completed.csv
+* concentrations_example_completed.csv
+* concentrations_line_P_completed.csv
  
 **Notice:** Modified only the cocentration file, not the scripts for this.
 
@@ -27,14 +27,14 @@ The notebook generates 3 outputs:
 This notebook converts a concentration file to a volume file.
 
 The notebook needs 3 inputs:  
-* concentrations_line_A_completed
-* concentrations_example_completed
-* concentrations_line_P_completed
+* concentrations_line_A_completed.csv
+* concentrations_example_completed.csv
+* concentrations_line_P_completed.csv
 
 The notebook generates 3 outputs:  
-* example_volumes
-* line_A_volumes
-* line_P_volumes
+* example_volumes.csv
+* line_A_volumes.csv
+* line_P_volumes.csv
 
 **Notice:**  
 * Script is modified. Volumes are compatible.
@@ -42,19 +42,19 @@ The notebook generates 3 outputs:
 
 # volume_to_echo.ipynb
 
-This notebook converts a volume file (example) to the following files
+This notebook converts a volume file (example).
 
 The notebook needs 2 inputs:  
-* line_A_volumes
-* line_P_volumes
+* line_A_volumes.csv
+* line_P_volumes.csv
 
 The notebook generates 6 outputs:  
-* example_named_volumes
-* line_A_named_volumes
-* line_P_named_volumes
-* example_instructions
-* example_water (for high volumes to pipette)
-* example_aa (for high volumes to pipette)
+* example_named_volumes.csv
+* line_A_named_volumes.csv
+* line_P_named_volumes.csv
+* example_instructions.csv
+* example_water.csv (for high volumes to pipette)
+* example_aa.csv (for high volumes to pipette)
 
 **Notice:** Takes only volumes, no modification required.
 
@@ -63,26 +63,30 @@ The notebook generates 6 outputs:
 This notebook converts named volume files to named concentration files. 
 
 The notebook needs 3 inputs:  
-* example_named_volumes
-* line_A_named_volumes
-* line_P_named_volumes
+* example_named_volumes.csv
+* line_A_named_volumes.csv
+* line_P_named_volumes.csv
 
 The notebook generates 3 outputs:  
-* example_concentrations_reconstituted
-* line_A_concentrations_reconstituted
-* line_P_concentrations_reconstituted
+* example_concentrations_reconstituted.csv
+* line_A_concentrations_reconstituted.csv
+* line_P_concentrations_reconstituted.csv
 
-**Notice:** Works. Concentrations need to be merged (by order of well name, line_A at the top of the file and line_P at the bottom).
+**Notice:** Concentrations need to be merged (by order of well name, line_A at the top of the file and line_P at the bottom).
 
 # extract_yield.ipynb
 
-The notebook needs 2 inputs:  
-* Raw results from a TECAN (example_TECAN)
-* Reconstituted concentrations from the previous step.
+The notebook needs 4 inputs:  
+* example_TECAN.csv: raw results from a TECAN plate reader.
+* example_concentrations_reconstituted.csv
+* line_A_concentrations_reconstituted.csv
+* line_P_concentrations_reconstituted.csv
 
-The notebook generates 5 outputs:  
-* yield_and_std
-* outliers (returns outliers)
-* everything: all results in the same file
-* std, ratio, mean: draw the plaque with std, ratio between mean and std and mean to see whether outliers are localised on the plaque
-* comments: about outliers
+The notebook generates 7 outputs:  
+* example_yield_and_std.csv
+* example_outliers.csv
+* example_draw_mean.csv
+* example_draw_ratio.csv
+* example_draw_std.csv
+* example_everything.csv: all results collected in the same file.
+* example_comments.txt: comments about outliers.
