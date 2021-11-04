@@ -6,34 +6,34 @@ This repository aims to regroup all necessary scripts for generating data and mo
 
 Large scale active-learning-guided exploration to maximize cell-free production by Olivier Borkowski*, Mathilde Koch*, Agnès Zettor, Amir Pandi, Angelo Cardoso Batista, Paul Soudier and Jean-Loup Faulon. Currently available at https://doi.org/10.1101/751669. *: authors contributed equally.
 
-# Active learning loop
+# 1. Active learning loop
 
 This folder contains data for:
 * Generating the initial plate to perform active learning. Given that the user doesn't have one **(initial_plate_generation, Figure 1c)**.
 * Generating the active learning loop **(learn_and_suggest script, Figures 1c and 1d)**.
 * Generating the model statistics at each iteration **(generate_model_statistics, Figure 1e)**.
 
-# Compound effect analysis
+# 2. Compound effect analysis
 
 This folder contains scripts to analyze the effect of compounds in different lysates, either with a linear regression or a mutual information analysis. **(Figure 1g, Supplementary Figure 3)**.
 
-# Controls analysis plates
+# 3. Controls analysis plates
 
 This folder contains the data and scripts used to extract the absolute yields (ie: compared to lysate of origin) for all other lysates. **(Supplementary Figure 4)**.
 
-# Echo handling scripts
+# 4. Echo handling scripts
 
 This folder contains scripts for handling the [Echo liquid handler](https://www.labcyte.com/echo-liquid-handling). Based on a file of concentrations to test, the scripts generate instructions for Echo, then extract data and perform quality control. **(No specific figure)**
 
-# Multiple extracts analysis
+# 5. Multiple extracts analysis
 
 This folder contains scripts to extract the most informative 20 points to predict 102 other points, as well as various analyses than were conducted using those 20 points. **(Figure 2 and Supplementary Figure 2e)**.
 
-# Predict for new lysate
+# 6. Predict for new lysate
 
 This folder contains scripts to predict yield on unseen lysates to optimise them. **(No specific Figure, but same data as Figure 2)**.
 
-# Whole lysate most informative points
+# 7. Whole lysate most informative points
 
 This folder containts scripts to extract the most informative 102 (or 20) points that enabled the prediction of the full 1017 points dataset **(Supplementary Figure 2)**. Functions are similar to the ones that do the same thing in "multiple_extract" analysis. The difference is the wrapping around the input concentrations to test, or data to compare to.
 
