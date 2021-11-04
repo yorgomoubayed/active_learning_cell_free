@@ -1,9 +1,6 @@
-# Description:
+# Description
 
-This folder contains experimental data from OB, PS and AB.
+This folder contains experimental data from the following authors: Olivier Borkowski, Paul Soudier and Angelo Cardoso-Batista.
 
-The linear_analysis notebook allows running a linear regression and extracting the coefficients caracterising the lysate.
-
-The mutual_information_analysis notebook allows for running mutual information analysis and extracting those coefficients (Figure 1c, Supplementary Figure 3)
-
-
+* **linear_analysis.ipynb:** Jupyter notebook that runs a linear regression and extracts the coefficients caracterising the lysate.
+* **mutual_information_analysis.ipynb:** Jupyter notebook that runs a mutual information analysis and extracts the previously mentioned coefficients (Figure 1c, Supplementary Figure 3).
