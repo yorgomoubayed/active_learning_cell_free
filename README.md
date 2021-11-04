@@ -43,9 +43,6 @@ This folder containts scripts to extract the most informative 102 (or 20) points
 
 - **nb_conda_kernels :** running the Jupyter notebook in the correct environment.
 - **jupyter_contrib_nbextensions :** tools for better Jupyter notebooks.
-~~~
-conda install -c conda-forge jupyter_contrib_nbextensions
-~~~
 - **Numpy :** array handling.
 - **Matplotlib :** data visualisation.
 - **Scikit-learn :** machine learning algorithms. **Version 0.19.1** is recommended.
@@ -54,7 +51,7 @@ conda install -c conda-forge jupyter_contrib_nbextensions
 
 * Clone repository
 
-* Create conda environment form the YAML file (it has all packages and dependencies)
+* Create conda environment from the YAML file (it has all packages and dependencies)
 ~~~
 conda env create -f alcf.yml
 ~~~
@@ -66,5 +63,5 @@ conda activate alcf
 
 * Launch Jupyter Notebook
 ~~~
-jupyter notebook <notebook nama>
+jupyter notebook <notebook name>
 ~~~
