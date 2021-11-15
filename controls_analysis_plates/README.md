@@ -23,37 +23,37 @@ All 8 folders contain the following Jupyter notebooks:
 
 ## AB analysis
 
-The normalisation we proceed to is:		
-y_norm_to_ORI = a * y_norm_to_AB + b 			
-normalised_to_ORI = 0.72 * normalised_to_AB + 0.0 			
+The normalisation we proceed to is:  	
+y_norm_to_ORI = a * y_norm_to_AB + b   			
+normalised_to_ORI = 0.72 * normalised_to_AB + 0.0  			
 
 ## DH5alpha analysis
 
-The normalisation we proceed to is:		
-y_norm_to_ORI = a * y_norm_to_DH5 + b 		
-normalised_to_ORI = 1.54 * normalised_to_DH5 + 0.38		
+The normalisation we proceed to is:  
+y_norm_to_ORI = a * y_norm_to_DH5 + b   		
+normalised_to_ORI = 1.54 * normalised_to_DH5 + 0.38  		
 
 ## PS analysis
 
-The normalisation we proceed to is:		
-y_norm_to_ORI = a * y_norm_to_PS + b 		
+The normalisation we proceed to is:  
+y_norm_to_ORI = a * y_norm_to_PS + b  		
 
 2 different plates can be compared from 'raw' data: the **full PS plate** and the **control PS plate** are both normalised according to PS. It is interesting to note that the controls are very well conserved with a R2 of 0.9378.
 
 The coefficients are slightly different for the **full plate** and the **control plate**:		
-* **Full plate:** normalised_to_ORI = 1.29 * normalised_to_PS_full + 0.08		
-* **Control plate:** normalised_to_ORI = 1.19 * normalised_to_PS_ctrl + 0.00		
+* **Full plate:** normalised_to_ORI = 1.29 * normalised_to_PS_full + 0.08  	
+* **Control plate:** normalised_to_ORI = 1.19 * normalised_to_PS_ctrl + 0.00  		
 
 ## Rifaxamin analysis 
 
-The normalisation we proceed to is:		
-rifaxamin_to_PS = 0.07 * rifaxamin_to_rifaxamin + 0.02		
-rifaxamin_to_ORI = 1.19 * rifaxamin_to_PS + 0.00		
+The normalisation we proceed to is:  
+rifaxamin_to_PS = 0.07 * rifaxamin_to_rifaxamin + 0.02  		
+rifaxamin_to_ORI = 1.19 * rifaxamin_to_PS + 0.00  		
 
 ## Spectinomycin analysis
 
-The normalisation we proceed to is:		
-spectinomycin_to_PS = 0.15 * spectinomycin_to_spectinomycin + 0.03		
-spectinomycin_to_ORI = 1.19 * spectinomycin_to_PS + 0.00		
+The normalisation we proceed to is:  
+spectinomycin_to_PS = 0.15 * spectinomycin_to_spectinomycin + 0.03  
+spectinomycin_to_ORI = 1.19 * spectinomycin_to_PS + 0.00  
 		
 **Notice:** regression R2 is the lowest of the current workflow at 0.87.
