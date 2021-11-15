@@ -23,15 +23,15 @@ All 8 folders contain the following Jupyter notebooks:
 
 ## AB analysis
 
-The normalisation we proceed to is:  	
-y_norm_to_ORI = a * y_norm_to_AB + b   			
-normalised_to_ORI = 0.72 * normalised_to_AB + 0.0  			
+The normalisation we proceed to is:  
+y_norm_to_ORI = a * y_norm_to_AB + b  
+normalised_to_ORI = 0.72 * normalised_to_AB + 0.0  
 
 ## DH5alpha analysis
 
 The normalisation we proceed to is:  
-y_norm_to_ORI = a * y_norm_to_DH5 + b   		
-normalised_to_ORI = 1.54 * normalised_to_DH5 + 0.38  		
+y_norm_to_ORI = a * y_norm_to_DH5 + b  
+normalised_to_ORI = 1.54 * normalised_to_DH5 + 0.38  
 
 ## PS analysis
 
@@ -47,8 +47,8 @@ The coefficients are slightly different for the **full plate** and the **control
 ## Rifaxamin analysis 
 
 The normalisation we proceed to is:  
-rifaxamin_to_PS = 0.07 * rifaxamin_to_rifaxamin + 0.02  		
-rifaxamin_to_ORI = 1.19 * rifaxamin_to_PS + 0.00  		
+rifaxamin_to_PS = 0.07 * rifaxamin_to_rifaxamin + 0.02  
+rifaxamin_to_ORI = 1.19 * rifaxamin_to_PS + 0.00  
 
 ## Spectinomycin analysis
 
