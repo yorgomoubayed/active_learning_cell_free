@@ -24,8 +24,8 @@ All 8 folders contain the following Jupyter notebooks:
 ## AB analysis
 
 The normalisation we proceed to is:		
-y_norm_to_ORI = a * y_norm_to_AB + b 		
-normalised_to_ORI = 0.72 * normalised_to_AB + 0.0 		
+y_norm_to_ORI = a * y_norm_to_AB + b 			
+normalised_to_ORI = 0.72 * normalised_to_AB + 0.0 			
 
 ## DH5alpha analysis
 
