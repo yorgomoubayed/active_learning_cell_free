@@ -44,15 +44,15 @@ The notebook generates 3 outputs:
 
 This notebook converts a volume file (example).
 
-The notebook needs 2 inputs:  +
+The notebook needs 2 inputs:
 * line_A_volumes.csv
 * line_P_volumes.csv
 * example_volumes.csv
 
 The notebook generates 6 outputs:  
-* example_named_volumes.csv
 * line_A_named_volumes.csv
 * line_P_named_volumes.csv
+* example_named_volumes.csv
 * example_instructions.csv
 * example_water.csv (for high volumes to pipette)
 * example_aa.csv (for high volumes to pipette)
