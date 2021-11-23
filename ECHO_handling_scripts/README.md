@@ -43,24 +43,22 @@ Converts a volume file (example).
 
 This notebook converts named volume files to named concentration files. 
 
-**Input:** {}_named_volumes.csv
-**Output:** {}_concentrations_reconstituted.csv
+**Input:** {}_named_volumes.csv    
+**Output:** {}_concentrations_reconstituted.csv    
 
 **Notice:** Concentrations need to be merged (by order of well name, line_A at the top of the file and line_P at the bottom).
 
 # extract_yield.ipynb
 
-The notebook needs 4 inputs:  
-* example_TECAN.csv: raw results from a TECAN plate reader.
-* example_concentrations_reconstituted.csv
-* line_A_concentrations_reconstituted.csv
-* line_P_concentrations_reconstituted.csv
+**Input:**  
+	* {}_TECAN.csv: raw results from a TECAN plate reader.
+	* {}_concentrations_reconstituted.csv
 
-The notebook generates 7 outputs:  
-* example_yield_and_std.csv
-* example_outliers.csv
-* example_draw_mean.csv
-* example_draw_ratio.csv
-* example_draw_std.csv
-* example_everything.csv: all results collected in the same file.
-* example_comments.txt: comments about outliers.
+**Output**  
+	* {}_yield_and_std.csv
+	* {}_outliers.csv
+	* {}_draw_mean.csv
+	* {}_draw_ratio.csv
+	* {}_draw_std.csv
+	* {}_everything.csv: all results collected in the same file.
+	* {}_comments.txt: comments about outliers.
