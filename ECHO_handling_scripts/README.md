@@ -1,24 +1,20 @@
-# Folder description
+# Folder
 
 This folder contains scripts that handle:  
 * The conversion of concentration files to the instructions for the ECHO liquid handler.
 * The extraction of information from the TECAN (mapping values back to the concentration array).
 
-# Scripts description
+# Scripts
 
 ## completed_concentration.ipynb
 
 This notebook completes a concentration file that doesn't have constant values (extract), by adding those values.
 
-The notebook needs 3 inputs:  
-* concentrations_line_A.csv
-* concentrations_example.csv
-* concentrations_line_P.csv
+The notebook needs 1 inputs:  
+* concentrations_{}.csv
 
-The notebook generates 3 outputs:  
-* concentrations_line_A_completed.csv
-* concentrations_example_completed.csv
-* concentrations_line_P_completed.csv
+The notebook generates 1 output:  
+* concentrations_{}_completed.csv
  
 **Notice:** Modified only the cocentration file, not the scripts for this.
 
