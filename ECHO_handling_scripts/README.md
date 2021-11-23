@@ -50,11 +50,11 @@ This notebook converts named volume files to named concentration files.
 
 # extract_yield.ipynb
 
-**Input:**  
+* **Input:**  
 	* {}_TECAN.csv: raw results from a TECAN plate reader.
 	* {}_concentrations_reconstituted.csv
 
-**Output**  
+* **Output:**  
 	* {}_yield_and_std.csv
 	* {}_outliers.csv
 	* {}_draw_mean.csv
